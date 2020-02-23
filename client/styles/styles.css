@@ -1,0 +1,672 @@
+#topTitle {
+    color: black;
+    font-size: 25;
+    margin: 15px auto 30px auto;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+#titlewrap {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin: 0 auto;
+    width: 100%;
+    height: 85px;
+}
+
+#screenwrap {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 15px;
+    grid-row-gap: 0px;
+    grid-template-columns: 2fr 1fr;
+    height: 85%;
+    width: 100%;
+}
+
+#conStatus h2 {
+    margin: 0 auto;
+    border: 5px solid rgb(90, 90, 197);
+    border-bottom: none;
+}
+
+#conStatus {
+    text-align: center;
+    height: 110%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#conlist {
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0 auto;
+    height: 80%;
+    border: 5px solid rgb(90, 90, 197);
+}
+
+#typing {
+    width: 100%;
+    height: 5%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 0px;
+}
+
+#chatInput {
+    font-size: 1.6em;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#submit {
+    display: inline;
+    white-space: nowrap;
+}
+
+#board {
+    margin: 50px auto;
+    margin-right: 8%;
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 75%;
+    height: 85%;
+    align-content: center;
+}
+
+#zero {
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    background-color: white;
+}
+
+#one {
+    border-bottom: solid 5px black;
+    background-color: white;
+}
+
+#two {
+    border-bottom: solid 5px black;
+    border-left: solid 5px black;
+    background-color: white;
+}
+
+#three {
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    background-color: white;
+}
+
+#four {
+    border-bottom: solid 5px black;
+    background-color: white;
+}
+
+#five {
+    border-bottom: solid 5px black;
+    border-left: solid 5px black;
+    background-color: white;
+}
+
+#six {
+    border-right: solid 5px black;
+    background-color: white;
+}
+
+#seven {
+    background-color: white;
+}
+
+#eight {
+    border-left: solid 5px black;
+    background-color: white;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#reload {
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    font-family: Cambria;
+    align-content: center;
+}
+
+
+/**new boards**/
+
+#zerob {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#oneb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#twob {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#threeb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#fourb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#fiveb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#sixb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#sevenb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+#eightb {
+    margin: 12px auto 18px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+}
+
+
+/**board blocks**/
+
+.grid-item {
+    background-color: rgb(207, 206, 206);
+}
+
+
+/* #zero-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#zero-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#zero-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#zero-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#zero-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#zero-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#zero-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#zero-seven {
+    background-color: white;
+}
+
+#zero-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#one-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#one-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#one-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#one-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#one-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#one-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#one-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#one-seven {
+    background-color: white;
+}
+
+#one-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#two-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#two-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#two-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#two-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#two-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#two-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#two-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#two-seven {
+    background-color: white;
+}
+
+#two-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#three-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#three-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#three-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#three-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#three-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#three-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#three-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#three-seven {
+    background-color: white;
+}
+
+#three-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#four-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#four-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#four-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#four-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#four-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#four-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#four-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#four-seven {
+    background-color: white;
+}
+
+#four-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#five-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#five-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#five-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#five-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#five-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#five-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#five-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#five-seven {
+    background-color: white;
+}
+
+#five-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#six-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#six-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#six-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#six-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#six-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#six-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#six-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#six-seven {
+    background-color: white;
+}
+
+#six-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#seven-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#seven-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#seven-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#seven-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#seven-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#seven-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#seven-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#seven-seven {
+    background-color: white;
+}
+
+#seven-eight {
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#eight-zero {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#eight-one {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#eight-two {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#eight-three {
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#eight-four {
+    border-bottom: solid 2px black;
+    background-color: white;
+}
+
+#eight-five {
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    background-color: white;
+}
+
+#eight-six {
+    border-right: solid 2px black;
+    background-color: white;
+}
+
+#eight-seven {
+    background-color: white;
+}
+
+#eight-eight {
+    border-left: solid 2px black;
+    background-color: white;
+} */
